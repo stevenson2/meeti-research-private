@@ -1,0 +1,56 @@
+# Local ECG data and experiment workspaces
+data/
+datasets/
+raw_data/
+runs/
+processed*/
+papers_fulltext/
+papers/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Model weights, tensors, raw recordings and annotations
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.keras
+*.tflite
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.dat
+*.atr
+*.hea
+*.ecgr
+*.edf
+*.mat
+*.pdf
+*.zip
+*.tar
+*.gz
+*.bundle
+
+# Session state and logs: never upload, including to private remotes
+NEXT_SESSION_PROMPT*.md
+PLAN_STATE.json
+SESSION_LOG.md
+LOOP_LOG.md
+local_meeti_metadata_manifest.*
+*.log
+*.pid
+
+# Credentials and machine-local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+.DS_Store
+Thumbs.db
