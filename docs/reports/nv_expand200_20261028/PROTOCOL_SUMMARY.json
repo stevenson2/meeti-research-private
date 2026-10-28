@@ -1,0 +1,57 @@
+{
+  "models": [
+    "S",
+    "L",
+    "S_LP",
+    "L_LP"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "training": "fixed zero offset C",
+  "train": {
+    "identity_patients": 150,
+    "N": 1986034,
+    "V": 13109,
+    "V_patients": 90
+  },
+  "dev": {
+    "identity_patients": 50,
+    "N": 776938,
+    "V": 6264,
+    "V_patients": 32
+  },
+  "independent": {
+    "identity_patients": 40,
+    "NV_patients": 39,
+    "N": 591730,
+    "V": 2277,
+    "V_patients": 18
+  },
+  "batch": 256,
+  "eval_batch": 1024,
+  "precision": "float32; TF32 disabled; deterministic operations",
+  "max_epochs": 80,
+  "patience": 12,
+  "min_delta": 0.0001,
+  "steps_per_epoch": 7810,
+  "optimizer": "Adam 3e-4, cosine decay alpha 0.01, 624800 decay steps",
+  "class_weights": [
+    0.5033003091812134,
+    76.25077819824219
+  ],
+  "checkpoint_selection": "Strict minimum zero-offset patient/class equal dev CE; min_delta controls waiting only",
+  "decision": "pV > 0.50",
+  "shifts": [
+    -4,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    4
+  ],
+  "interpretation": "Descriptive all-seed comparisons; no threshold/checkpoint selection from independent results; not a data-expansion-only causal experiment"
+}

@@ -1,0 +1,216 @@
+{
+  "created": "2026-10-28T08:37:22.434471+00:00",
+  "source_scope": "NV_EXPAND200_20261026",
+  "source_note": "Working experiment files, not an imported source Git history. No experiment tree or model/runtime state is copied.",
+  "entries": [
+    {
+      "source": "NV_EXPAND200_20261026/models.py",
+      "path": "experiments/nv_expand200_20261026/models.py",
+      "source_sha256": "be522b58e3d99b97633bb07f30a229426cade3321486bf73f2c0b8c737f2d62b",
+      "uploaded_sha256": "be522b58e3d99b97633bb07f30a229426cade3321486bf73f2c0b8c737f2d62b",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/source_model.py",
+      "path": "experiments/nv_expand200_20261026/source_model.py",
+      "source_sha256": "5f0b3f0a55e1bf7e82eee873a68eb6683cd23fccb8f1e2a09611f0dbad431816",
+      "uploaded_sha256": "5f0b3f0a55e1bf7e82eee873a68eb6683cd23fccb8f1e2a09611f0dbad431816",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/common.py",
+      "path": "experiments/nv_expand200_20261026/common.py",
+      "source_sha256": "853033322e600d32cffaca12a32c81a390417cf75a99e298902c794390aa6882",
+      "uploaded_sha256": "853033322e600d32cffaca12a32c81a390417cf75a99e298902c794390aa6882",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/train_one.py",
+      "path": "experiments/nv_expand200_20261026/train_one.py",
+      "source_sha256": "50a91b5e7d40c6888b83fb9ea2ed35e22383b33f334ade2d4cf4cf0924643c82",
+      "uploaded_sha256": "50a91b5e7d40c6888b83fb9ea2ed35e22383b33f334ade2d4cf4cf0924643c82",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/evaluate.py",
+      "path": "experiments/nv_expand200_20261026/evaluate.py",
+      "source_sha256": "3d654b22d289cd29a2bf2313cc325de534b483a396baed916d4fa67e67f7271f",
+      "uploaded_sha256": "3d654b22d289cd29a2bf2313cc325de534b483a396baed916d4fa67e67f7271f",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/prepare_development.py",
+      "path": "experiments/nv_expand200_20261026/prepare_development.py",
+      "source_sha256": "6fd6c4a8d99926009282b409580353e15af001cb48e7f89e1b6f41a27257096c",
+      "uploaded_sha256": "6fd6c4a8d99926009282b409580353e15af001cb48e7f89e1b6f41a27257096c",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/setup_training.py",
+      "path": "experiments/nv_expand200_20261026/setup_training.py",
+      "source_sha256": "3fd4f17b155277ee63867089e72197d62a7af6ebb2597a1aba4d6b8946aed634",
+      "uploaded_sha256": "3fd4f17b155277ee63867089e72197d62a7af6ebb2597a1aba4d6b8946aed634",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/setup_evaluator.py",
+      "path": "experiments/nv_expand200_20261026/setup_evaluator.py",
+      "source_sha256": "8a782e34cdc2485b5b2ffbd630e8005c853a1aae1002a1f43b8a25fbbbda573c",
+      "uploaded_sha256": "8a782e34cdc2485b5b2ffbd630e8005c853a1aae1002a1f43b8a25fbbbda573c",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/verify_freeze_training.py",
+      "path": "experiments/nv_expand200_20261026/verify_freeze_training.py",
+      "source_sha256": "c7dfbee8cefab039472b68fe2ec7180caeb3429b237d3c9d93a4a4f8675909c4",
+      "uploaded_sha256": "c7dfbee8cefab039472b68fe2ec7180caeb3429b237d3c9d93a4a4f8675909c4",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/independent_evaluate.py",
+      "path": "experiments/nv_expand200_20261026/independent_evaluate.py",
+      "source_sha256": "b119891db40d0ebf29be6e36747bd27bffc54ed58879a5d9a7de05ab98681eca",
+      "uploaded_sha256": "b119891db40d0ebf29be6e36747bd27bffc54ed58879a5d9a7de05ab98681eca",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/run_matrix.py",
+      "path": "experiments/nv_expand200_20261026/run_matrix.py",
+      "source_sha256": "22e76a13d4e6ec514ab170cc347efe9d5fec902686dc88b086f3841b72b95a59",
+      "uploaded_sha256": "22e76a13d4e6ec514ab170cc347efe9d5fec902686dc88b086f3841b72b95a59",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/run_independent.py",
+      "path": "experiments/nv_expand200_20261026/run_independent.py",
+      "source_sha256": "5fafb94d804d56d7f489f05fd54d22b478b2a8fef7caae85e2df563dbd93d5b9",
+      "uploaded_sha256": "5fafb94d804d56d7f489f05fd54d22b478b2a8fef7caae85e2df563dbd93d5b9",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/complete_pipeline.py",
+      "path": "experiments/nv_expand200_20261026/complete_pipeline.py",
+      "source_sha256": "e7f706aae3f59913835c19b944fce69e389d122ffebd9b8fe0a35899f658c1dc",
+      "uploaded_sha256": "e7f706aae3f59913835c19b944fce69e389d122ffebd9b8fe0a35899f658c1dc",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/compare_development.py",
+      "path": "experiments/nv_expand200_20261026/compare_development.py",
+      "source_sha256": "7adb90151170addd37381e27ea3ca3decf6f41d4df2b44757f7837ed640736d8",
+      "uploaded_sha256": "7adb90151170addd37381e27ea3ca3decf6f41d4df2b44757f7837ed640736d8",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/compare_independent.py",
+      "path": "experiments/nv_expand200_20261026/compare_independent.py",
+      "source_sha256": "9966472c2753ede94f8825c59fc5961855f01d4c0e462f63f4e1225335de41ea",
+      "uploaded_sha256": "9966472c2753ede94f8825c59fc5961855f01d4c0e462f63f4e1225335de41ea",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/verify_statistics.py",
+      "path": "experiments/nv_expand200_20261026/verify_statistics.py",
+      "source_sha256": "52d43164776f63512cefdbd3481079f3a3f1b19a7be826974891c17ed9f298d7",
+      "uploaded_sha256": "52d43164776f63512cefdbd3481079f3a3f1b19a7be826974891c17ed9f298d7",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/verify_independent_statistics.py",
+      "path": "experiments/nv_expand200_20261026/verify_independent_statistics.py",
+      "source_sha256": "d5813024ac63c9ceee1face8cd15b8b67ccf45007159456a6f0cfffc2a4fa0a6",
+      "uploaded_sha256": "d5813024ac63c9ceee1face8cd15b8b67ccf45007159456a6f0cfffc2a4fa0a6",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/audit_training_results.py",
+      "path": "experiments/nv_expand200_20261026/audit_training_results.py",
+      "source_sha256": "8232a4319ab095f6c5ccf295b112f1abee54cb1e84e77004534718e0c083a1fc",
+      "uploaded_sha256": "8232a4319ab095f6c5ccf295b112f1abee54cb1e84e77004534718e0c083a1fc",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/audit_independent_results.py",
+      "path": "experiments/nv_expand200_20261026/audit_independent_results.py",
+      "source_sha256": "45a7fc7bbbb2f3eb6ea54979584f6cb9db437f419d9209f4dbc1526ebfa8da98",
+      "uploaded_sha256": "45a7fc7bbbb2f3eb6ea54979584f6cb9db437f419d9209f4dbc1526ebfa8da98",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/summarize_data_readiness.py",
+      "path": "experiments/nv_expand200_20261026/summarize_data_readiness.py",
+      "source_sha256": "379d2f629416b77cf7ac1ecc8a65e1e118f1073d2565d19638a58b8a47fe8814",
+      "uploaded_sha256": "379d2f629416b77cf7ac1ecc8a65e1e118f1073d2565d19638a58b8a47fe8814",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/make_final_report.py",
+      "path": "experiments/nv_expand200_20261026/make_final_report.py",
+      "source_sha256": "d1b523a0c2b37892d1eab245d5a42cd7fc09f823babcacffaffce6c3cbd03ae5",
+      "uploaded_sha256": "d1b523a0c2b37892d1eab245d5a42cd7fc09f823babcacffaffce6c3cbd03ae5",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/plot_independent.py",
+      "path": "experiments/nv_expand200_20261026/plot_independent.py",
+      "source_sha256": "808cd1623bc4d34cbd3365ad5645dd4b235570789be157745fafc8909f5ed212",
+      "uploaded_sha256": "808cd1623bc4d34cbd3365ad5645dd4b235570789be157745fafc8909f5ed212",
+      "transformation": "none; exact code snapshot"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/independent_runs.csv",
+      "path": "docs/reports/nv_expand200_20261028/independent_runs.csv",
+      "source_sha256": "1b590723ecf5fa3753d2373b8af9ff7ef98536299636a4fb52e9c0d8ed45be4e",
+      "uploaded_sha256": "dd88108d6a244db63a2a7057b0c2abf68dc3d37e2f1dd454384ad3799adecac1",
+      "transformation": "none; aggregate rows only; uploaded text line endings normalized to LF"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/independent_same_seed_pairs.csv",
+      "path": "docs/reports/nv_expand200_20261028/independent_same_seed_pairs.csv",
+      "source_sha256": "01bd633e474f1cae9c93de7e70d364768b81952332465ef3662bcbbe189fb840",
+      "uploaded_sha256": "1690b9e1a8168b733e7b185f4cd1c847d869535e9fdc66441193bfcf46e62ae8",
+      "transformation": "none; aggregate rows only; uploaded text line endings normalized to LF"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/independent_paired_intervals.csv",
+      "path": "docs/reports/nv_expand200_20261028/independent_paired_intervals.csv",
+      "source_sha256": "707038968c67985687036f8830d21882f1046692f0027f5eda83f6ef6721e390",
+      "uploaded_sha256": "0151c19517d62acbdc9b9768871748693555f07cc781587c3a680037c7d34b85",
+      "transformation": "none; aggregate rows only; uploaded text line endings normalized to LF"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/development_runs.csv",
+      "path": "docs/reports/nv_expand200_20261028/development_runs.csv",
+      "source_sha256": "d8684f33f8c1a54baad7eb37304cdd84e3faa03cb9efd8ce7b1721e50e99df66",
+      "uploaded_sha256": "a6478fa7cdaa80d902501fb7721b3a007e774e8a700e93767d8a0a24b717db5b",
+      "transformation": "none; aggregate rows only; uploaded text line endings normalized to LF"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/development_same_seed_pairs.csv",
+      "path": "docs/reports/nv_expand200_20261028/development_same_seed_pairs.csv",
+      "source_sha256": "50a690f08a90f6842b606dffe6dc4a2f96232de0caaaab2d5e9c6b20f2a8a191",
+      "uploaded_sha256": "dd11bb2dff301521337d5735e4133ce202803f56d75679d4ab4724162daf7037",
+      "transformation": "none; aggregate rows only; uploaded text line endings normalized to LF"
+    },
+    {
+      "source": "NV_EXPAND200_20261026/FINAL_REPORT.md",
+      "path": "docs/reports/nv_expand200_20261028/RESULTS.md",
+      "source_sha256": "67118a2faf2e4cc56f5e9b09dc15fe873ba47c65a3e93b4e44fe1048ea09be7c",
+      "uploaded_sha256": "353d3aa470e4540b53148d23d2d078f41ec29cfb6e728390701b287d63bbc153",
+      "transformation": "Only two figure links made repository-relative; scientific text unchanged; uploaded text line endings normalized to LF"
+    },
+    {
+      "source": "planning_review/NV_EXPAND200_REVIEW_20261028.md",
+      "path": "docs/reports/nv_expand200_20261028/REVIEW.md",
+      "source_sha256": "df3e1dcb6ce00dd571ec3e8bdc7cdc84c978d3294f519b35ea1b9d2933f1849e",
+      "uploaded_sha256": "c691b2eb35eabd9fcdb9271ad6d21288d3218f2023096cc35b7803d3f9866398",
+      "transformation": "Clarify local-only review JSON; scientific findings unchanged; uploaded text line endings normalized to LF"
+    }
+  ],
+  "postfreeze_audit_correction": {
+    "file": "audit_independent_results.py",
+    "frozen_sha256": "52c2564c4192b63c3d9044b308e98fdd32bb1390275331b52af63a0df38de44d",
+    "published_sha256": "45a7fc7bbbb2f3eb6ea54979584f6cb9db437f419d9209f4dbc1526ebfa8da98",
+    "explanation": "rankdata verification now casts existing float32 scores to float64. The helper was in the independent implementation freeze, but not the training script_hashes. This is an explicit audit-only postfreeze correction; inference, scores, thresholds and checkpoints unchanged. See REVIEW.md."
+  }
+}

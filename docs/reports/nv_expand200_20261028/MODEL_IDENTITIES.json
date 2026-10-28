@@ -1,0 +1,77 @@
+{
+  "note": "Artifact identifiers only. No weights, optimizer/RNG/session state, patient roster or per-beat labels are uploaded.",
+  "models": {
+    "S_C_s42": {
+      "sha256": "35df9cf112bee8abb055a6f22d640a6df3db7e03d68051b3dffae2d49a82087d",
+      "best_epoch": 3,
+      "model": "S",
+      "seed": 42
+    },
+    "L_C_s42": {
+      "sha256": "d0a7b52582895ebc1a49834e6524202bc39be2ce1fd6a6b29aa413c5ffb06b2b",
+      "best_epoch": 3,
+      "model": "L",
+      "seed": 42
+    },
+    "S_LP_C_s42": {
+      "sha256": "1dbb89ae3c3f0fdd138816fed95153fcec3364f9080c4c99913986358ecb7b58",
+      "best_epoch": 5,
+      "model": "S_LP",
+      "seed": 42
+    },
+    "L_LP_C_s42": {
+      "sha256": "53fbaa527c404e3bd68e629f754d5a6afaff1379223fe7afc99294cecfd9c60d",
+      "best_epoch": 3,
+      "model": "L_LP",
+      "seed": 42
+    },
+    "S_C_s43": {
+      "sha256": "41af398104bb9ab9995dea360521c4c4aba26b0a9a6eefd4d64057f1a014a5de",
+      "best_epoch": 4,
+      "model": "S",
+      "seed": 43
+    },
+    "L_C_s43": {
+      "sha256": "6374ae3cde576bb9e3a3f091d402a6f16f44d8db7521568a4e3b9dc6cf413ed2",
+      "best_epoch": 2,
+      "model": "L",
+      "seed": 43
+    },
+    "S_LP_C_s43": {
+      "sha256": "b61a5bff7f33e3d6d158b90b4c60bfeac2a20f2be2ea232dc57572d5c287df78",
+      "best_epoch": 2,
+      "model": "S_LP",
+      "seed": 43
+    },
+    "L_LP_C_s43": {
+      "sha256": "527377a4880d2905fdc4e5e467d6a739828e938ea9922b8a76670a177d4b909c",
+      "best_epoch": 3,
+      "model": "L_LP",
+      "seed": 43
+    },
+    "S_C_s44": {
+      "sha256": "d611f5bacb3983dd519e688a404a15001966116af5104e2b4b8b8a242669b264",
+      "best_epoch": 1,
+      "model": "S",
+      "seed": 44
+    },
+    "L_C_s44": {
+      "sha256": "22a07754da57191ad5a277f38663a71757980386f4d647c5ba460dde55be6761",
+      "best_epoch": 2,
+      "model": "L",
+      "seed": 44
+    },
+    "S_LP_C_s44": {
+      "sha256": "84d25d710e2a48039d06c1ab3917965cf9b1113f4310d1e7c54f159631c995c9",
+      "best_epoch": 1,
+      "model": "S_LP",
+      "seed": 44
+    },
+    "L_LP_C_s44": {
+      "sha256": "5b255058f4b1a7360ce1de97ed4b655e06e4a8bbfb48b5542560901646342309",
+      "best_epoch": 1,
+      "model": "L_LP",
+      "seed": 44
+    }
+  }
+}

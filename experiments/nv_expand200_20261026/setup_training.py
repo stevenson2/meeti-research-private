@@ -1,0 +1,26 @@
+"""Prepare isolated shared training implementation; no fitting on import."""
+from pathlib import Path
+import json,hashlib
+ROOT=Path(__file__).resolve().parent;OLD=ROOT.parent/'NV_LLP_C_20261025'
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+assert not (ROOT/'frozen_config.json').exists()
+for name in ['source_model.py','models.py']:(ROOT/name).write_bytes((OLD/name).read_bytes())
+s=(OLD/'common.py').read_text()
+s=s.replace("DATA_ROOT = ROOT.parent/'NV_LONGRUN_20261024'", "FROZEN_DATA = json.loads((ROOT/'development_qc.json').read_text())\nDATA_ROOT = Path(FROZEN_DATA['cache_files']['train_X.npy']['path']).parent")
+s=s.replace("R1 = ROOT.parent/'NV_BASELINE_R1'", "R1 = ROOT")
+s=s.replace('BATCH, EVAL_BATCH, EPOCHS, STEPS = 256,1024,80,871','BATCH, EVAL_BATCH, EPOCHS, STEPS = 256,1024,80,FROZEN_DATA[\'steps_per_epoch\']')
+s=s.replace('CW = np.array([0.5047268145892249,53.38974113135187],np.float32)',"CW = np.array(FROZEN_DATA['class_weights'],np.float32)")
+s=s.replace('def metadata(split):\n',"def metadata(split):\n    assert split in ('train','dev'), 'INDEPENDENT_CONTENT_DENIED'\n")
+s=s.replace("def data(split): return np.load(DATA_ROOT/f'{split}_X.npy',mmap_mode='r'),metadata(split)","def data(split):\n    assert split in ('train','dev'), 'INDEPENDENT_CONTENT_DENIED'\n    return np.load(DATA_ROOT/f'{split}_X.npy',mmap_mode='r'),metadata(split)")
+s=s.replace('def compare(p,m,p0,m0):\n',"def compare(p,m,p0,m0):\n    if len(p)==0: return dict(probability_abs=None,margin_abs=None,flips=0,exact=True)\n")
+(ROOT/'common.py').write_text(s)
+s=(OLD/'train_one.py').read_text()
+s=s.replace("X,tr=data('train'); D,dv=data('dev'); all_dev=np.arange(len(dv['y']))", "X,tr=data('train'); D,dv=data('dev'); all_dev=np.arange(len(dv['y']))\n    assert aug=='C' and X.shape[1]==1\n    n_old_dev=FROZEN_DATA['counts']['dev']['legacy_windows']")
+s=s.replace("delta[ix].astype(np.int64)+4", "delta[ix].astype(np.int64)")
+s=s.replace("            loss_sum+=loss*len(ix); correct+=acc", "            loss_sum+=loss*len(ix); correct+=acc\n            if (bi+1)%256==0 or bi+1==STEPS:\n                writej(out/'progress.json',dict(phase='training',epoch=ep+1,batch=bi+1,batches=STEPS,seen=min((bi+1)*BATCH,len(order)),windows=len(order),epoch_seconds=time.monotonic()-epoch_start,updated=now()))")
+s=s.replace("        bal,means=balanced(nll,dv); dev_seconds=time.monotonic()-t", "        bal,means=balanced(nll,dv); dev_seconds=time.monotonic()-t\n        old_bal,_=balanced(nll[:n_old_dev],{k:dv[k][:n_old_dev] for k in ['y','patient']})\n        new_bal,_=balanced(nll[n_old_dev:],{k:dv[k][n_old_dev:] for k in ['y','patient']})")
+s=s.replace("row.update(train_loss=", "row.update(dev_old_balanced_ce=old_bal,dev_new_balanced_ce=new_bal,train_loss=")
+(ROOT/'train_one.py').write_text(s)
+matrix=dict(scope='Expanded patient data; exactly4 architectures x3 seeds, C only',runs=[dict(id=f'{kind}_C_s{seed}',model=kind,seed=seed,augmentation='C',status='planned') for seed in [42,43,44] for kind in ['S','L','S_LP','L_LP']])
+(ROOT/'matrix.json').write_text(json.dumps(matrix,indent=2)+'\n')
+print('ISOLATED SHARED TRAINING CODE PREPARED; not frozen until QC + verification')

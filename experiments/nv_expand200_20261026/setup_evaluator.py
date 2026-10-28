@@ -1,0 +1,15 @@
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent;OLD=ROOT.parent/'NV_LLP_C_20261025'
+s=(OLD/'evaluate.py').read_text()
+s=s.replace("X,dv=data('dev'); T,tr=data('train'); rows=np.arange(len(dv['y']))", "X,dv=data('dev'); rows=np.arange(len(dv['y']))\n    legacy=ROOT.parent/'NV_LONGRUN_20261024'\n    T=np.load(legacy/'train_X.npy',mmap_mode='r')\n    with np.load(legacy/'train_meta.npz') as f: tr={k:f[k] for k in f.files}\n    old_names=[p['patient'] for p in readj(ROOT.parent/'NV_BASELINE_R1/prep_manifest.json')['patients']['train']]")
+s=s.replace("patient_names('train').index('p02866')", "old_names.index('p02866')")
+s=s.replace("patient=meta['patient'][ix],segment=", "patient=(meta['patient'][ix] if split=='dev' else np.full(len(ix),patient_names('train').index('p02866'),np.int16)),segment=")
+s=s.replace("manifest['predictions'][name]=dict(sha256=sha(path),seconds=", "manifest['predictions'][name]=dict(rows_namespace=('combined_dev' if split=='dev' else 'legacy_train_cache'),patient_namespace=('combined_dev' if split=='dev' else 'combined_train'),sha256=sha(path),seconds=")
+s=s.replace("flip_rate=float(np.mean((p[a]>.5)!=(p0[a]>.5)))", "flip_rate=float(np.mean((p[a]>.5)!=(p0[a]>.5))) if a.any() else None")
+s=s.replace("any_flip_rate=float(np.mean(np.any(decisions[a]!=decisions[a,3,None],axis=1)))", "any_flip_rate=float(np.mean(np.any(decisions[a]!=decisions[a,3,None],axis=1))) if a.any() else None")
+s=s.replace("[r['zero']['N_false_positive_rate'] for r in per]", "[r['zero']['N_false_positive_rate'] for r in per if r['zero']['N']]")
+s=s.replace("    missed={}\n", "    zero['auc'],zero['ap']=auc_ap(y,p0)\n    cohorts={}\n    legacy_names=set(readj(ROOT/'patient_split_frozen.json')['legacy_split']['dev'])\n    for cohort in ['legacy_dev','new_dev','combined_dev']:\n        pis=[pi for pi,name in enumerate(names) if cohort=='combined_dev' or ((name in legacy_names)==(cohort=='legacy_dev'))]\n        mask=np.isin(patient,pis); pp=[r for r in per if names.index(r['patient']) in pis]\n        z=class_metrics(y[mask],p0[mask]); z['auc'],z['ap']=auc_ap(y[mask],p0[mask])\n        z['macro_N_false_positive_rate']=float(np.mean([r['zero']['N_false_positive_rate'] for r in pp if r['zero']['N']]))\n        z['macro_V_detection_rate']=float(np.mean([r['zero']['V_detection_rate'] for r in pp if r['zero']['V']])) if any(r['zero']['V'] for r in pp) else None\n        cohorts[cohort]=dict(zero=z,robust=robust(mask),identity_patients=len(pis),N_patients=sum(r['zero']['N']>0 for r in pp),V_patients=sum(r['zero']['V']>0 for r in pp),macro_N_any_wrong_rate=float(np.mean([r['N_any_wrong_rate'] for r in pp if r['N_common']])),macro_V_all_detected_rate=float(np.mean([r['V_all_detected_rate'] for r in pp if r['V_common']])) if any(r['V_common'] for r in pp) else None,per_patient=pp)\n    missed={}\n")
+s=s.replace("open(R1/'review_missed_V_dev.csv')", "open(ROOT.parent/'NV_BASELINE_R1/review_missed_V_dev.csv')")
+s=s.replace("summary=dict(run=run,", "summary=dict(cohorts=cohorts,run=run,")
+(ROOT/'evaluate.py').write_text(s)
+print('EVALUATOR PREPARED: combined + old/new dev; independent access absent')
