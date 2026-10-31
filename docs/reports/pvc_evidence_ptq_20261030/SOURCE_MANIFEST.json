@@ -1,0 +1,257 @@
+{
+  "publication_date": "2026-10-31",
+  "scope": "Aggregate positive and negative results from fixed six-model PTQ and PVC evidence studies",
+  "original_sources_unchanged": true,
+  "source_reports_and_aggregate_tables": [
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/INT8_LOSS_DIAGNOSIS_20261029/REPORT.md",
+      "sha256": "8a3b75f524723e303f234b4ea05c47dd0037d1944109e2569593148ef6ed5594",
+      "bytes": 9864
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PTQ_REPAIR_20261029/REPORT.md",
+      "sha256": "67948e75746c8c9e25938b98ba9a243bcfb96340a803fa6814f6ecb7ccbf09c2",
+      "bytes": 8354
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PVC_EVIDENCE_REAGG_20261029/REPORT.md",
+      "sha256": "7ff69a610e133aad8ef807f3272c88cf1c015e16864828650cdad87c250e282f",
+      "bytes": 10115
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PVC_FULL_BACKGROUND_20261029/REPORT.md",
+      "sha256": "1851e45d9169700e0d9d7096e0ae0be926bf1449e17f7fc4c9ff2cb61ed35cdd",
+      "bytes": 14032
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/RARE_V_SQI_REVIEW_20261030/REPORT.md",
+      "sha256": "508e96e4f9a5122a51eadfaea89bee00073155c198edd4d533b90ee26a921d3d",
+      "bytes": 9087
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PC_REPLAY_REPAIR_20261030/REPORT.md",
+      "sha256": "4f498b1e4a8d2aa71996ae1e2f0903e9c64397ac7d05cf6ccf784e6d66ff05bf",
+      "bytes": 9162
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/IDEAL_R_FINAL_DIAGNOSTIC_20261030/REPORT.md",
+      "sha256": "630a907a1c7e572214a81712f633e608fa7f6cf563c8da652f5dadf9f2e93f37",
+      "bytes": 6854
+    },
+    {
+      "namespace": "original_research_execution",
+      "path": "NV_SMALLMODEL_C_TRANSFER_20261029/REPORT.md",
+      "sha256": "915cf99945915c49549ce508f85d4245f3481930155a106c6b523d11ae404cf7",
+      "bytes": 11223
+    },
+    {
+      "namespace": "original_research_execution",
+      "path": "NV_SMALLMODEL_AB_INT8_20261029/REPORT.md",
+      "sha256": "6634162be70455cb3d9f8e45f46f6c8a936b7456d882ee6454f5a7c6c44a5550",
+      "bytes": 9082
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PTQ_REPAIR_20261029/seed_summary.csv",
+      "sha256": "81e85b1ec62edce1e20d85bbdf7fa48abd6317163808d751b9ebbcedd5bd74f1",
+      "bytes": 2821
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PTQ_REPAIR_20261029/bootstrap.csv",
+      "sha256": "86fd0b91f6c62230def2fbe48494326b9254898558fc360141070e8aa8bb023c",
+      "bytes": 729
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PVC_FULL_BACKGROUND_20261029/discovery_metrics.csv",
+      "sha256": "caaec33d9a8c1be9afbbec480b1c6fe05cc33f4ed293947c28dad2f2a3916903",
+      "bytes": 4931
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PVC_FULL_BACKGROUND_20261029/review_burden.csv",
+      "sha256": "2a97d159b398810beeaec8d75d57139d257cfad4304ad59acc889217630c770a",
+      "bytes": 1498
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/RARE_V_SQI_REVIEW_20261030/gate_summary.csv",
+      "sha256": "731e35b457982a406ddba4d13ae4e76530f704eb8fff4f5d61dc2f8f30aa50de",
+      "bytes": 1707
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PC_REPLAY_REPAIR_20261030/outcome_comparison.csv",
+      "sha256": "4318e5429e41a50db822722899a82df92e1517746116a588968a52b44b4e1216",
+      "bytes": 508
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/IDEAL_R_FINAL_DIAGNOSTIC_20261030/model_diagnostic_summary.csv",
+      "sha256": "198d345a788f79a8ffc9ad510769c2d32edc13bdd4ba9d348a7fd21c33cded93",
+      "bytes": 1310
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PTQ_REPAIR_20261029/independent_audit.json",
+      "sha256": "1049744d62f6d90ef48ce72f5ecf0253fab4fe32c9fcd4b64a5a0a3ff2305b8b",
+      "bytes": 349
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PC_REPLAY_REPAIR_20261030/RESULT_AUDIT.json",
+      "sha256": "3cfad7f9d1dab0db8f8893f5c5cfbbe506bf48d519a6bd1ebdf7d564f9df6ede",
+      "bytes": 790
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PC_REPLAY_REPAIR_20261030/COMPARISON_SUMMARY.json",
+      "sha256": "ea07d59c305a32d1b35724162122c4a6fa5396a23e3ff43a02aa996e5b46c761",
+      "bytes": 626
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/IDEAL_R_FINAL_DIAGNOSTIC_20261030/INDEPENDENT_AUDIT.json",
+      "sha256": "4f23f35bfdd66effc0bbb7522415b5db91cd147e2427efaafef0df5b6b1f17f5",
+      "bytes": 371
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/IDEAL_R_FINAL_DIAGNOSTIC_20261030/DECISION.json",
+      "sha256": "29192c29725df572359295aaa0f47d7a1a966002fe66b86782e9304d74e328d6",
+      "bytes": 857
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PTQ_REPAIR_20261029/deployment_config.json",
+      "sha256": "06cd7775fe7f8eb5eb30d42490d397c925e9b6b4ce8efd11e59cbfeef68604b4",
+      "bytes": 6147
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PVC_FULL_BACKGROUND_20261029/board/BOARD_RESULT.json",
+      "sha256": "f58115c3b854981e62cc302bdc7903032f8bc4957945ddf4327cf40c26ca74e8",
+      "bytes": 2711
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/IDEAL_R_FINAL_DIAGNOSTIC_20261030/PREREG.json",
+      "sha256": "16544fec334bd335ac8a1b2c991510d3a365e1d735da42069ee55e84286d0ec7",
+      "bytes": 4084
+    },
+    {
+      "namespace": "conversation_workspace",
+      "path": "outputs/PC_REPLAY_REPAIR_20261030/rare_patient_summary.csv",
+      "sha256": "7db5be994dceed0894b42cb18ad640e00aa9937b07be38a5d11bbf7179ff1a52",
+      "bytes": 2886
+    }
+  ],
+  "published_files": [
+    {
+      "path": "audits/BOARD_AGGREGATE_RESULT.json",
+      "sha256": "550ea4b75f58307dce27ba0d32bfe8ad94e19e07656f58d08cc18b8b78c3f08d",
+      "bytes": 2291
+    },
+    {
+      "path": "audits/FINAL_DIAGNOSTIC_HISTORICAL_DECISION.json",
+      "sha256": "d04963bea5466768ca542b46a9b13c93691b08bff10f8a811cbb6ddaebdcefe7",
+      "bytes": 840
+    },
+    {
+      "path": "audits/FINAL_DIAGNOSTIC_INDEPENDENT_AUDIT.json",
+      "sha256": "a82192449d1b3b65297abd551661268f32b234fa503db8b304de0b9c7da650ff",
+      "bytes": 362
+    },
+    {
+      "path": "audits/PC_REPAIR_COMPARISON_SUMMARY.json",
+      "sha256": "5de110efdfb7783db9f5a845b3202d7e9f7009947f426c57774c58f1a43f4a0a",
+      "bytes": 605
+    },
+    {
+      "path": "audits/PTQ_COMPUTATIONAL_AUDIT.json",
+      "sha256": "47ac8dd30a8b63dc58e1fb954cdb453a6ada5020be5fe5dcad62e45a92d9b163",
+      "bytes": 341
+    },
+    {
+      "path": "audits/REPAIRED_PC_COMPUTATIONAL_AUDIT.json",
+      "sha256": "4c5b72ce086145fc8e352bda99d8ce2b4424840941a3c7ac75172cfb54deb6f0",
+      "bytes": 773
+    },
+    {
+      "path": "metrics/final_alignment_summary.csv",
+      "sha256": "88b446f4a766d259617ec60f700f830858cbb9ca7a35111df11d676e0389187a",
+      "bytes": 1303
+    },
+    {
+      "path": "metrics/full_background_burden.csv",
+      "sha256": "538625b083f43b32d03392ee2c0a147a856f1e447a083d3503ea835d9c10bd82",
+      "bytes": 1485
+    },
+    {
+      "path": "metrics/full_background_discovery.csv",
+      "sha256": "33e1bb3f75933dade19b32a8558568cabf9ae25a5924ea807f5b63c7a9a89ce6",
+      "bytes": 4894
+    },
+    {
+      "path": "metrics/ptq_paired_bootstrap.csv",
+      "sha256": "e1d7b5e8e98d2e1b510dda531d4945bee764baf9363e00e8c1289616414ea305",
+      "bytes": 722
+    },
+    {
+      "path": "metrics/ptq_seed_summary.csv",
+      "sha256": "0ee010a849333235352c54d32a13e33ce7d0e792ad85087c8a29a911628bae92",
+      "bytes": 2814
+    },
+    {
+      "path": "metrics/repaired_random3_aggregate.json",
+      "sha256": "e8726c23480e79565f84c1b78c5cabbaac1b9a42fa4680748966ec25fb828867",
+      "bytes": 268
+    },
+    {
+      "path": "metrics/repaired_rare_outcomes.csv",
+      "sha256": "f9958c0967df1d53369e71ea32c023a6dbb0448972c0735771ac7cd636dce901",
+      "bytes": 501
+    },
+    {
+      "path": "metrics/sqi_gate_summary.csv",
+      "sha256": "4085369b41a49e14aec42d1e25123a2898c220bbdc0c56a1831ded4883da54a6",
+      "bytes": 1688
+    },
+    {
+      "path": "MODEL_IDENTITIES.json",
+      "sha256": "2ae0f8d5c606d099361d6d4003f5317028047be21fdf21149a53383e12fe3b57",
+      "bytes": 6224
+    },
+    {
+      "path": "PROTOCOL_SUMMARY.json",
+      "sha256": "be0ab6167f4695e00aa17e0adbbbfe2db04c6dced4832b64ca2618b5e16a9060",
+      "bytes": 3180
+    },
+    {
+      "path": "PUBLICATION_STATUS.json",
+      "sha256": "58625862fd6e08b898e0de55c0acadb2a221224809e31d93d0c6737045f32619",
+      "bytes": 537
+    },
+    {
+      "path": "README.md",
+      "sha256": "3ed26334298142e77901077c3bed4f15078ac9c266e7f4f73e1a66b7963f4bf4",
+      "bytes": 1079
+    },
+    {
+      "path": "RESULTS.md",
+      "sha256": "9de9ac458be76075d49fd617a46e98acae41203887e583a9825e5a14570949e9",
+      "bytes": 16760
+    }
+  ],
+  "analysis_code_manifest": "../../../experiments/pvc_evidence_ptq_20261030/SOURCE_MANIFEST.json",
+  "excluded": "Raw ECG, per-beat truth/inputs/outputs, weights, logs, flash backups, session state, complete local archive",
+  "published_text_format": "UTF-8 / LF; aggregate content unchanged; source hashes refer to original bytes"
+}

@@ -1,0 +1,7 @@
+﻿key,referenceV,actual_strict_crossings,reference_strict_crossings,reference_ties,reference_below,reference_score_improved_beats,actual_D3_hit,actual_referenceV_captured,actual_V_supported_items,actual_Q_noV_items,actual_N_only_items,actual_S_noV_items,actual_no_reference_beat_items,actual_review_items,referenceR_replace_D3_hit,referenceR_replace_referenceV_captured,referenceR_replace_V_supported_items,referenceR_replace_Q_noV_items,referenceR_replace_N_only_items,referenceR_replace_S_noV_items,referenceR_replace_no_reference_beat_items,referenceR_replace_review_items,optimistic_credit_D3_hit,optimistic_credit_referenceV_captured,optimistic_credit_V_supported_items,optimistic_credit_Q_noV_items,optimistic_credit_N_only_items,optimistic_credit_S_noV_items,optimistic_credit_no_reference_beat_items,optimistic_credit_review_items
+seed42_A,12,0,0,0,12,10,0,0,0,14,1,0,0,15,0,0,0,14,1,0,0,15,0,0,0,14,1,0,0,15
+seed42_B,12,0,0,0,12,4,0,0,0,15,0,0,0,15,0,0,0,15,0,0,0,15,0,0,0,15,0,0,0,15
+seed43_A,12,0,1,0,11,7,0,0,0,15,0,0,0,15,1,1,1,14,0,0,0,15,1,1,1,14,0,0,0,15
+seed43_B,12,0,2,0,10,6,0,0,0,15,0,0,0,15,2,2,2,13,0,0,0,15,2,2,2,13,0,0,0,15
+seed44_A,12,0,0,0,12,4,0,0,0,14,1,0,0,15,0,0,0,14,1,0,0,15,0,0,0,14,1,0,0,15
+seed44_B,12,0,0,0,12,3,1,1,1,14,0,0,0,15,0,0,0,15,0,0,0,15,1,1,1,14,0,0,0,15

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "independently_checked_background_third_scores": 30,
+  "independently_reconstructed_top3_lists": 90,
+  "paired_V_model_margin_rows": 72,
+  "frozen_models_and_repaired_source_hashes_unchanged": true,
+  "same_fixed_background_all_variants": true,
+  "stop_rule_independently_recomputed": true,
+  "no_additional_model_calls_or_inputs": true
+}

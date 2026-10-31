@@ -1,0 +1,153 @@
+{
+  "experiment_dates": [
+    "2026-10-29",
+    "2026-10-30"
+  ],
+  "publication_date": "2026-10-31",
+  "files": [
+    {
+      "source": "work/ptq_repair/repair.py",
+      "source_sha256": "5aabcb760f4ad7a37de42912799a308ea38f425cc8950512b504918d1d335b65",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/ptq_repair/repair.py",
+      "published_sha256": "7241657dd4e404a3a5d35cc185f3beb64ff4c7daea3a09e78211eb7290e8c08e",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": [
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_INT8_SOURCE']",
+          "occurrences": 1
+        },
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_SMALLMODEL_SOURCE']",
+          "occurrences": 1
+        },
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_EXPAND200_SOURCE']",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "work/ptq_repair/evaluate.py",
+      "source_sha256": "a4d167e57ed02c6d6a9fe0ab103b77a506e925ab7e9764a2f1881b6ec274ded0",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/ptq_repair/evaluate.py",
+      "published_sha256": "5565025269edfcb89d22fe8f4d311de456fff5d098c58d3a6e8cbad7f57f9fcc",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": [
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_INT8_SOURCE']",
+          "occurrences": 1
+        },
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_CROSSLEVEL_SOURCE']",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "work/ptq_repair/audit.py",
+      "source_sha256": "82a9674f10f30958165e924f1ef1adcd30b095608ad0b75d525f94edbbb42cf0",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/ptq_repair/audit.py",
+      "published_sha256": "b4237cf48bee7bd2999f9abca7ad1e63417d26029eee7a306285c779bad0dcaa",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": [
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_INT8_SOURCE']",
+          "occurrences": 1
+        },
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_CROSSLEVEL_SOURCE']",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "work/ptq_repair/verify_graph.py",
+      "source_sha256": "724740fb904ebea02cef5bd4dc99626eb6edf8ddd01199c85ff7295d07eaa9d5",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/ptq_repair/verify_graph.py",
+      "published_sha256": "fa23743b17ce0ba83b913e900f3eca5b7a350a5b61a49cb6bf1316747be54636",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": [
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_INT8_SOURCE']",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "work/full_background/evaluate.py",
+      "source_sha256": "fa3b0c192b9408ef46979b39b98125e5551b9354a6a209d38f5eff874ca9a0c0",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/full_background/evaluate.py",
+      "published_sha256": "819447990b814f77c7ff4aaaeb13fb7cd300655c9fc00ea29fe72f786314d64a",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": [
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_DEV_SOURCE']",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "work/full_background/audit_results.py",
+      "source_sha256": "67341c0baea830a46d0b796cbdc10801e9405602a5d337297115c4f39994c655",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/full_background/audit_results.py",
+      "published_sha256": "4d5bdae721cce9222adaa614fae350595a4362c7a9981ee060286420aa8f15d3",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": [
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_PRODUCT_ROOT']",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "work/replay_repair/compare.py",
+      "source_sha256": "684e4b70ebc42e6707493fc31e30494c48c01f4194ff7dd5339374b42dc304b1",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/replay_repair/compare.py",
+      "published_sha256": "684e4b70ebc42e6707493fc31e30494c48c01f4194ff7dd5339374b42dc304b1",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": []
+    },
+    {
+      "source": "work/replay_repair/audit_results.py",
+      "source_sha256": "985516897284f659f0745a861d6fedffb9a15a25f124b4a7ce99c1fcbfef248d",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/replay_repair/audit_results.py",
+      "published_sha256": "cd3918d0593b23651bd55d55a543c854917520a124eb82babfa79cad44a911ac",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": [
+        {
+          "original_path_expression": "machine-local path omitted",
+          "replacement_expression": "os.environ['ECG_PRODUCT_ROOT']",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source": "work/ideal_r_diagnostic/analyze.py",
+      "source_sha256": "31a224e6a1ed0512f0d7ac3c96f7bfaac742d1c579ac1a879229ba36522db07b",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/ideal_r_diagnostic/analyze.py",
+      "published_sha256": "31a224e6a1ed0512f0d7ac3c96f7bfaac742d1c579ac1a879229ba36522db07b",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": []
+    },
+    {
+      "source": "work/ideal_r_diagnostic/audit.py",
+      "source_sha256": "1272408ef42cc6a04687240be66c898bd57a25ddd4e8618df3cc9faa835df838",
+      "published_path": "experiments/pvc_evidence_ptq_20261030/snapshot/work/ideal_r_diagnostic/audit.py",
+      "published_sha256": "1272408ef42cc6a04687240be66c898bd57a25ddd4e8618df3cc9faa835df838",
+      "changes": "Only machine-local path expressions replaced by explicit environment variables; line endings normalized to LF",
+      "path_substitutions": []
+    }
+  ],
+  "weights_or_data_included": false,
+  "experiment_rerun_for_publication": false
+}

@@ -1,0 +1,7 @@
+﻿key,old_D3_hits,new_D3_hits,patients,old_referenceV_captured,new_referenceV_captured,referenceV,review_items,V_supported_items,Q_noV_items,N_only_items,S_noV_items,no_reference_beat_items,same_selected_windows_as_before,same_rank_slots_as_before
+seed42_A,0,0,5,0,0,12,15,0,14,1,0,0,14,14
+seed42_B,0,0,5,0,0,12,15,0,15,0,0,0,14,12
+seed43_A,0,0,5,0,0,12,15,0,15,0,0,0,15,15
+seed43_B,0,0,5,0,0,12,15,0,15,0,0,0,15,15
+seed44_A,0,0,5,0,0,12,15,0,14,1,0,0,15,15
+seed44_B,1,1,5,1,1,12,15,1,14,0,0,0,13,12

@@ -1,8 +1,8 @@
 # meeti-research-private
 
-ESP32 单导联可穿戴 ECG 项目的私密研究代码仓库。
+ESP32 单导联可穿戴 ECG 项目的公开研究代码与结果仓库。正结果、负结果和工程失败一并记录，仓库保持可继续更新，不归档。
 
-- 私密远程：<https://github.com/stevenson2/meeti-research-private>
+- 研究仓库：<https://github.com/stevenson2/meeti-research-private>（保留历史名称，2026-10-31 按用户要求改为公开）
 - 产品仓：<https://github.com/stevenson2/ecg-programme-tju-flex.electron>
 - 本仓库从 2026-10-08 建立独立提交历史，初始内容为本机研究树已提交的 `scripts/` 快照。
 - 原研究树继续负责本机训练、评测与冻结产物。本仓库负责可上传的代码与经检查的研究说明。
@@ -39,4 +39,5 @@ git push origin main
 
 ## 最近研究阶段
 
+- [2026-10-29/30：A/B 小模型 PTQ、完整背景室早证据捕获与最终参考 R 诊断](docs/reports/pvc_evidence_ptq_20261030/README.md)。包括量化修复的绝对收益、未稳定保留的 B 优势、稀少 V 留存失败、PC 前端修复及新模型板端数值差异；全部正负结果按原口径提交。
 - [2026-10-28：新增200患者的N/V四格三种子与一次独立评价](docs/reports/nv_expand200_20261028/README.md)。包含经检查的代码、聚合报告、图表及来源哈希；不包含数据、权重或会话状态。

@@ -1,6 +1,6 @@
 # 上传与同步说明
 
-私密仓库：<https://github.com/stevenson2/meeti-research-private>
+公开研究仓库：<https://github.com/stevenson2/meeti-research-private>。2026-10-31 按用户要求公开，保留历史名称；正结果、负结果均提交，仓库不归档。
 
 ## 两个工作区
 
@@ -67,7 +67,7 @@ git clone https://github.com/stevenson2/meeti-research-private.git
 cd meeti-research-private
 ```
 
-需要登录有权限的 GitHub 账号。本次没有邀请协作者；如以后给其他人权限，先明确账号和访问范围。
+公开后读取和 clone 不需要登录；推送仍需有写入权限的 GitHub 账号。本次没有邀请协作者；如以后给其他人写入权限，先明确账号和访问范围。
 
 ## 来源与验证
 

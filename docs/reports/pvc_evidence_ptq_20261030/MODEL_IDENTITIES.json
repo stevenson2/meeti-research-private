@@ -1,0 +1,246 @@
+{
+  "model_weights_published": false,
+  "PC_interpreter": "TensorFlow 2.21.0 BUILTIN_REF",
+  "models": {
+    "seed42_A": {
+      "sha256": "cf21ad81a176bb2802fe5e5fb98bc903aa16ae9aa4304be013b23fbbf182f775",
+      "bytes": 167336,
+      "input": {
+        "index": 0,
+        "name": "serving_default_ecg_input:0",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          250,
+          1
+        ],
+        "shape_signature": [
+          1,
+          250,
+          1
+        ],
+        "scale": 0.047701675444841385,
+        "zero_point": -7
+      },
+      "output": {
+        "index": 257,
+        "name": "ecg_resnet_lite_1/out_1/MatMul;ecg_resnet_lite_1/out_1/BiasAdd",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          2
+        ],
+        "shape_signature": [
+          1,
+          2
+        ],
+        "scale": 0.1099676713347435,
+        "zero_point": 6
+      },
+      "decision": "int16(qV)-int16(qN) >= cutoff",
+      "calibration_2pct_cutoff": 18,
+      "parameters_including_BN_buffers": 62834,
+      "convolution_dense_MAC_per_beat": 1288192
+    },
+    "seed42_B": {
+      "sha256": "e2602aab6eaec0bc029bf701a3f5a88a3a381e3167036542f0d7dc5460d9b211",
+      "bytes": 167336,
+      "input": {
+        "index": 0,
+        "name": "serving_default_ecg_input:0",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          250,
+          1
+        ],
+        "shape_signature": [
+          1,
+          250,
+          1
+        ],
+        "scale": 0.047701675444841385,
+        "zero_point": -7
+      },
+      "output": {
+        "index": 257,
+        "name": "ecg_resnet_lite_1/out_1/MatMul;ecg_resnet_lite_1/out_1/BiasAdd",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          2
+        ],
+        "shape_signature": [
+          1,
+          2
+        ],
+        "scale": 0.09882103651762009,
+        "zero_point": 3
+      },
+      "decision": "int16(qV)-int16(qN) >= cutoff",
+      "calibration_2pct_cutoff": 19,
+      "parameters_including_BN_buffers": 62834,
+      "convolution_dense_MAC_per_beat": 1288192
+    },
+    "seed43_A": {
+      "sha256": "2f0b8cb39fdf5e62592fc570a39178062b84151bf5f6e3bfe933f34c9584ee65",
+      "bytes": 167336,
+      "input": {
+        "index": 0,
+        "name": "serving_default_ecg_input:0",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          250,
+          1
+        ],
+        "shape_signature": [
+          1,
+          250,
+          1
+        ],
+        "scale": 0.047701675444841385,
+        "zero_point": -7
+      },
+      "output": {
+        "index": 257,
+        "name": "ecg_resnet_lite_1/out_1/MatMul;ecg_resnet_lite_1/out_1/BiasAdd",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          2
+        ],
+        "shape_signature": [
+          1,
+          2
+        ],
+        "scale": 0.12681272625923157,
+        "zero_point": -16
+      },
+      "decision": "int16(qV)-int16(qN) >= cutoff",
+      "calibration_2pct_cutoff": 6,
+      "parameters_including_BN_buffers": 62834,
+      "convolution_dense_MAC_per_beat": 1288192
+    },
+    "seed43_B": {
+      "sha256": "8ad904e98434637cbce322915debeb242ca916ac1fba01a8f8cc15abadd3d6fe",
+      "bytes": 167336,
+      "input": {
+        "index": 0,
+        "name": "serving_default_ecg_input:0",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          250,
+          1
+        ],
+        "shape_signature": [
+          1,
+          250,
+          1
+        ],
+        "scale": 0.047701675444841385,
+        "zero_point": -7
+      },
+      "output": {
+        "index": 257,
+        "name": "ecg_resnet_lite_1/out_1/MatMul;ecg_resnet_lite_1/out_1/BiasAdd",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          2
+        ],
+        "shape_signature": [
+          1,
+          2
+        ],
+        "scale": 0.11524730175733566,
+        "zero_point": -27
+      },
+      "decision": "int16(qV)-int16(qN) >= cutoff",
+      "calibration_2pct_cutoff": 16,
+      "parameters_including_BN_buffers": 62834,
+      "convolution_dense_MAC_per_beat": 1288192
+    },
+    "seed44_A": {
+      "sha256": "e8b8cb158b519bb3bb68d4e22988352beb5c30cd5144b2a29c557b687b39bc6a",
+      "bytes": 167336,
+      "input": {
+        "index": 0,
+        "name": "serving_default_ecg_input:0",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          250,
+          1
+        ],
+        "shape_signature": [
+          1,
+          250,
+          1
+        ],
+        "scale": 0.047701675444841385,
+        "zero_point": -7
+      },
+      "output": {
+        "index": 257,
+        "name": "ecg_resnet_lite_1/out_1/MatMul;ecg_resnet_lite_1/out_1/BiasAdd",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          2
+        ],
+        "shape_signature": [
+          1,
+          2
+        ],
+        "scale": 0.12252053618431091,
+        "zero_point": -34
+      },
+      "decision": "int16(qV)-int16(qN) >= cutoff",
+      "calibration_2pct_cutoff": 4,
+      "parameters_including_BN_buffers": 62834,
+      "convolution_dense_MAC_per_beat": 1288192
+    },
+    "seed44_B": {
+      "sha256": "233543101e81e966dd5d9a0bec37fa3d911c531d8ac862c283251936411e809c",
+      "bytes": 167336,
+      "input": {
+        "index": 0,
+        "name": "serving_default_ecg_input:0",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          250,
+          1
+        ],
+        "shape_signature": [
+          1,
+          250,
+          1
+        ],
+        "scale": 0.047701675444841385,
+        "zero_point": -7
+      },
+      "output": {
+        "index": 257,
+        "name": "ecg_resnet_lite_1/out_1/MatMul;ecg_resnet_lite_1/out_1/BiasAdd",
+        "dtype": "<class 'numpy.int8'>",
+        "shape": [
+          1,
+          2
+        ],
+        "shape_signature": [
+          1,
+          2
+        ],
+        "scale": 0.10886874049901962,
+        "zero_point": -45
+      },
+      "decision": "int16(qV)-int16(qN) >= cutoff",
+      "calibration_2pct_cutoff": -10,
+      "parameters_including_BN_buffers": 62834,
+      "convolution_dense_MAC_per_beat": 1288192
+    }
+  }
+}

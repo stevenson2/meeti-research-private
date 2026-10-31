@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "count_patient_metric_checks": 54,
+  "integer_cutoffs_exhaustively_checked": 12288,
+  "source": "saved identical beat IDs, labels and three score paths; independent selection enumeration, no extra model inference",
+  "model_hashes_and_calibration_freeze_match": true,
+  "board": "not_measured",
+  "training": "none"
+}

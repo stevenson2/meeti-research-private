@@ -1,0 +1,48 @@
+{
+  "objective": "Assist capture and organize reviewable PVC evidence",
+  "fixed_seeds": [
+    42,
+    43,
+    44
+  ],
+  "fixed_arms": [
+    "A",
+    "B"
+  ],
+  "source_epoch": 60,
+  "beat_primary_endpoint": "Patient-equal V recall under patient-equal N FPR <= 0.02; dev diagnostic and calibration-locked views kept separate",
+  "complete_background": {
+    "patients": 40,
+    "segments": 160,
+    "hours": 186.413689,
+    "V_positive_patients": 24,
+    "observed_lt1pct_patients": 18,
+    "observed_1to5V_patients": 5
+  },
+  "repaired_cohort": {
+    "patients": 5,
+    "segments": 20,
+    "hours": 23.301711,
+    "reference_V": 12,
+    "inputs": 120916,
+    "candidate_grids": 20930,
+    "REF_logit_pairs": 725496
+  },
+  "review_budget": "3 distinct complete 4-second grids per patient",
+  "grid_score": "Maximum actual int16(qV)-int16(qN) across actual trigger candidates",
+  "tie_order": "Descending integer margin, segment identity, grid index",
+  "D3": "At least one selected central grid contains a reference V",
+  "random3": "Per patient uniform sampling without replacement from the identical eligible pool; P(hit)=1-C(n-g,3)/C(n,3)",
+  "referenceR_diagnostic": {
+    "extract": "Replay only seven full segments containing these12V from their original beginning; read same live250-sample ring at cached actual window-end and referenceR+125. Reference window is [R-125,R+124] in250Hz stream; no shift search, interpolation or R tuning.",
+    "verification": "Re-extracted12 actual inputs must equal cached bytes exactly; all72 actual model outputs must equal stored REF outputs exactly before interpreting oracle.",
+    "main_comparison": "Per V/model actual integer margin vs referenceR integer margin vs frozen third highest no-referenceV background grid. N/S/Q/unannotated background unchanged. Strict > is crossing; equality reported separately.",
+    "ties": "Original descending margin, segment identity, grid identity. Exact rank/list comparison resolves equal scores; no floats to break ties.",
+    "budget": "Exactly3 distinct4s grids per patient. Main hypothetical list replaces only each of12 matchedV input margins with referenceR result, recomputes affected grid max, keeps all other inputs fixed. Reference annotation is diagnostic only.",
+    "optimistic_check": "Additionally credit each referenceV grid with max(original grid margin, referenceR margin), all background fixed; same top3. This is a favorable diagnostic scenario, not an attainable deployment result or global optimum over all shifts.",
+    "stop_rule": "Descriptive majority rule: seal if >36/72 referenceR margins do not strictly exceed frozen third-background score AND >=4/6 models still hit fewer than3/5 patients even under optimistic credit. Ties also resolved by actual list ranking. No further tweaking after seal.",
+    "statistics": "12 beats/5 patients are the cohort; six seeds/models are repeated comparisons, not72 independent patients. No clinical Q relabel."
+  },
+  "inference_status": "Historical experiment finished; no new research computations in publication",
+  "Q_adjudication": "No independent clinical relabel; Q remains unclassifiable, not a negative/noise mask"
+}

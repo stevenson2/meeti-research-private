@@ -1,0 +1,18 @@
+{
+  "status": "SEALED_NO_FURTHER_TWEAKS",
+  "reference_strict_crossings_out_of72": 3,
+  "reference_ties_out_of72": 0,
+  "reference_not_strictly_above_third_out_of72": 69,
+  "models_optimistic_hit_fewer_than3of5": 6,
+  "stop_rule_met": true,
+  "stop_rule_frozen_before_outputs": "Descriptive majority rule: seal if >36/72 referenceR margins do not strictly exceed frozen third-background score AND >=4/6 models still hit fewer than3/5 patients even under optimistic credit. Ties also resolved by actual list ranking. No further tweaking after seal.",
+  "actual_REF_logit_pairs_verified": 72,
+  "referenceR_logit_pairs": 72,
+  "cases": 12,
+  "patients": 5,
+  "models": 6,
+  "referenceR_improved_score_pairs": 34,
+  "no_Q_or_background_removed": true,
+  "diagnostic_only_not_deployable_oracle": true,
+  "no_additional_shifts_or_tuning": true
+}

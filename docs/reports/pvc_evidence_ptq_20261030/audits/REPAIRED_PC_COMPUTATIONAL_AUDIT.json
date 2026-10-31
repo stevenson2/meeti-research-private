@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "segments": 20,
+  "models": 6,
+  "generated_candidates": 120916,
+  "REF_invocations": 725496,
+  "review_rows_verified_to_raw_INT8_scores_and_full_reference_counts": 90,
+  "all_30_top3_lists_independently_recomputed": true,
+  "random3_formula_independently_verified_all5": true,
+  "model_cache_score_hashes_verified": true,
+  "shared_product_source_hashes_unchanged": true,
+  "ranking_uses_only_actual_INT8_margin_and_fixed_identity_tie_break": true,
+  "scope": "Computational/reference-label audit, not human ECG readability adjudication",
+  "final_library_matches_regression_validated_library": true,
+  "fresh_process_cold_vs_warm_input_bytes_exact": true,
+  "same_final_models_before_after": true,
+  "exactly_five_patients_twenty_segments": true
+}

@@ -1,0 +1,73 @@
+{
+  "status": "FAIL",
+  "models": {
+    "seed42_A": {
+      "status": "FAIL",
+      "checks": {
+        "complete_and_no_NVFAIL": true,
+        "both_logits_exact": true,
+        "max_derived_score_delta": false,
+        "mean_signed_derived_score_delta": true,
+        "decision_flips": true
+      },
+      "windows": 353,
+      "both_logits_exact_count": 327,
+      "both_logits_exact_fraction": 0.9263456090651558,
+      "max_abs_logit_LSB_delta": 16,
+      "max_abs_margin_LSB_delta": 28,
+      "max_abs_derived_score_delta": 0.26153188861663385,
+      "mean_signed_derived_score_delta": 8.264714830040601e-05,
+      "decision_flips": {
+        "0": 1,
+        "18": 0
+      },
+      "warmup_excluded": 3,
+      "invoke_mean_us": 56608.78753541077,
+      "invoke_P50_us": 56610,
+      "invoke_P95_us": 56634,
+      "invoke_min_us": 56543,
+      "invoke_max_us": 56661,
+      "arena_size": 131072,
+      "arena_used": 50844,
+      "in_scale": 0.047701675,
+      "in_zp": -7,
+      "out_scale": 0.109967671,
+      "out_zp": 6
+    },
+    "seed42_B": {
+      "status": "FAIL",
+      "checks": {
+        "complete_and_no_NVFAIL": true,
+        "both_logits_exact": true,
+        "max_derived_score_delta": false,
+        "mean_signed_derived_score_delta": true,
+        "decision_flips": true
+      },
+      "windows": 353,
+      "both_logits_exact_count": 322,
+      "both_logits_exact_fraction": 0.9121813031161473,
+      "max_abs_logit_LSB_delta": 6,
+      "max_abs_margin_LSB_delta": 11,
+      "max_abs_derived_score_delta": 0.17424463538030233,
+      "mean_signed_derived_score_delta": -0.0006862639434414751,
+      "decision_flips": {
+        "0": 0,
+        "19": 0
+      },
+      "warmup_excluded": 3,
+      "invoke_mean_us": 56536.484419263455,
+      "invoke_P50_us": 56536,
+      "invoke_P95_us": 56559,
+      "invoke_min_us": 56500,
+      "invoke_max_us": 56574,
+      "arena_size": 131072,
+      "arena_used": 50844,
+      "in_scale": 0.047701675,
+      "in_zp": -7,
+      "out_scale": 0.098821037,
+      "out_zp": 3
+    }
+  },
+  "original_firmware_restored_full_flash_MD5_verified": true,
+  "scope": "Incremental fixed-input model replay only. Invoke timing excludes QRS, acquisition, queues, storage and communication. Original product-chain parity remains separately valid."
+}

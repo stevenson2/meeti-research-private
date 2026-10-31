@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "patients": 5,
+  "segments": 20,
+  "referenceV": 12,
+  "old_V_matched": 11,
+  "new_V_matched": 12,
+  "old_V_in_candidate_grids": 11,
+  "new_V_in_candidate_grids": 12,
+  "old_inputs": 117261,
+  "new_inputs": 120916,
+  "old_pool_grids": 20230,
+  "new_pool_grids": 20930,
+  "final_model_input_outputs": 725496,
+  "same_selected_windows_of90": 86,
+  "same_rank_slots_of90": 83,
+  "first_R_recovery_updates_real20": 0,
+  "reused_byte_identical_checkpoints": 19,
+  "rescored_after_cold_init_fix": 1,
+  "D3_unchanged_all6": true,
+  "new_top3_referenceV_capture_unchanged_all6": true
+}

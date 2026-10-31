@@ -1,0 +1,13 @@
+﻿key,mode,recommended_items,items_per_patient,V_supported_items,V_support_yield,unsupported_items,N_only_noV_items,S_present_noV_items,Q_undetermined_items,no_reference_beat_items,V_supported_trigger_V_items,V_supported_other_trigger_items,adjacent_pairs,trigger_N_items,trigger_S_items,trigger_V_items,trigger_Q_items,trigger_unmatched_items,no_recommendation_patients,reference_noV_patients_with_recommendation
+seed42_A,primary_top3,120,3.0,11,0.09166666666666666,109,20,4,85,0,10,1,2,11,4,10,44,51,0,16
+seed42_A,existing_cutoff_gated,120,3.0,11,0.09166666666666666,109,20,4,85,0,10,1,2,11,4,10,44,51,0,16
+seed42_B,primary_top3,120,3.0,9,0.075,111,17,5,89,0,8,1,2,15,4,8,48,45,0,16
+seed42_B,existing_cutoff_gated,120,3.0,9,0.075,111,17,5,89,0,8,1,2,15,4,8,48,45,0,16
+seed43_A,primary_top3,120,3.0,15,0.125,105,22,4,78,1,15,0,0,22,3,15,35,45,0,16
+seed43_A,existing_cutoff_gated,120,3.0,15,0.125,105,22,4,78,1,15,0,0,22,3,15,35,45,0,16
+seed43_B,primary_top3,120,3.0,21,0.175,99,23,5,71,0,19,2,1,18,3,19,38,42,0,16
+seed43_B,existing_cutoff_gated,120,3.0,21,0.175,99,23,5,71,0,19,2,1,18,3,19,38,42,0,16
+seed44_A,primary_top3,120,3.0,11,0.09166666666666666,109,17,4,88,0,8,3,1,16,3,8,42,51,0,16
+seed44_A,existing_cutoff_gated,120,3.0,11,0.09166666666666666,109,17,4,88,0,8,3,1,16,3,8,42,51,0,16
+seed44_B,primary_top3,120,3.0,11,0.09166666666666666,109,8,4,97,0,10,1,0,7,4,10,50,49,0,16
+seed44_B,existing_cutoff_gated,120,3.0,11,0.09166666666666666,109,8,4,97,0,10,1,0,7,4,10,50,49,0,16

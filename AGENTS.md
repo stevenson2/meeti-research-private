@@ -1,6 +1,6 @@
-# 私密研究上传仓库 Agent 规范
+# 研究上传仓库 Agent 规范
 
-本仓库是原 meeti 研究树的干净上传入口，远程必须是 `https://github.com/stevenson2/meeti-research-private.git`，可见性必须保持 private。
+本仓库是原 meeti 研究树的干净上传入口，远程必须是 `https://github.com/stevenson2/meeti-research-private.git`。2026-10-31 用户明确要求改为公开，保留历史仓库名，不再要求 private；后续可见性变更仍需用户授权。用户同时要求“坏结果也提交，不封存”：正负结果均如实记录，仓库不归档、不设只读，保持可继续更新。
 
 1. 上传、提交和 Git 配置在 Windows PowerShell 完成；训练与评测仍在原 WSL 研究树。不要在上传仓库自动运行训练。
 2. 原研究树的提交历史不得合并、推送或用 bundle 导入本仓库。保持原研究树的 HEAD、分支、工作区和冻结产物不变。

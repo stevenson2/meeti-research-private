@@ -1,0 +1,7 @@
+{
+  "patients": 5,
+  "budget_items": 15,
+  "expected_patients_with_V_evidence": 0.008594341936916328,
+  "expected_referenceV_captured": 0.008598103157979686,
+  "scope": "Exact expectation under repaired same-patient eligible grid pools; not a random observed trial"
+}
